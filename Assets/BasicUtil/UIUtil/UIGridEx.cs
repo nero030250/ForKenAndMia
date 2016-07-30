@@ -19,11 +19,14 @@ public class UIGridEx : MonoBehaviour{
 	public SystemDelegate.OnItemInitilaze OnInitializeItem;
 	private List<GameObject> itemList = new List<GameObject> ();
 
+	public int Count;
+
 	public void Awake () {
 		Grid.hideInactive = true;
 	}
 
 	public void Resize (int count, bool repostion = false) {
+		Count = count;
 		for (int index = 0; index < count; index ++) {
 			if (itemList.Count <= index) {
 				GameObject obj = NGUITools.AddChild (gameObject, itemPrefab);
@@ -71,5 +74,15 @@ public class UIGridEx : MonoBehaviour{
 				return tScrpit;
 		}
 		return null;
+	}
+
+	[ContextMenu ("PosTest")]
+	public void PosTest () {
+		if (itemList != null) {
+			for (int index = 0; index < itemList.Count; index++)
+				DestroyImmediate (itemList [index]);
+			itemList.Clear ();
+		}
+		Resize (Count, true);
 	}
 }

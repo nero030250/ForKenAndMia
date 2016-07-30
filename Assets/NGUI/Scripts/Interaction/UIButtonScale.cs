@@ -10,12 +10,14 @@ using UnityEngine;
 /// </summary>
 
 [AddComponentMenu("NGUI/Interaction/Button Scale")]
+[RequireComponent (typeof (BoxCollider))]
+[RequireComponent (typeof (UIButton))]
 public class UIButtonScale : MonoBehaviour
 {
 	public Transform tweenTarget;
-	public Vector3 hover = new Vector3(1.1f, 1.1f, 1.1f);
-	public Vector3 pressed = new Vector3(1.05f, 1.05f, 1.05f);
-	public float duration = 0.2f;
+	public Vector3 hover = new Vector3(0.95f, 0.95f, 0.95f);
+	public Vector3 pressed = new Vector3(0.95f, 0.95f, 0.95f);
+	public float duration = 0.05f;
 
 	Vector3 mScale;
 	bool mStarted = false;

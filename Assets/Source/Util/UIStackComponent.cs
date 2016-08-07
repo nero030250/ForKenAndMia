@@ -21,7 +21,8 @@ public class UIStackComponent : MonoBehaviour {
 	}
 
 	void OnDestroy () {
-		UIManager.Instance.Pop ();
+		if (UIManager.Instance != null)
+			UIManager.Instance.Pop ();
 	}
 
 	private void AddMaskCollider () {
@@ -29,6 +30,7 @@ public class UIStackComponent : MonoBehaviour {
 	}
 
 	public void End () {
+		SoundManager.Instance.Play ("Click");
 		Destroy (gameObject);
 	}
 }

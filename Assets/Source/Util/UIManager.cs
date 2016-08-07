@@ -24,10 +24,10 @@ public class UIManager : UISingleton <UIManager> {
 	public void Push (UIStackComponent component) {
 		dialogStack.Push (component);
 		UIPanel panel = component.GetComponent <UIPanel> ();
-		panel.depth = nextDepth;
+		panel.depth = 0;
 		nextDepth += DepthIncrement;
 
-		NGUITools.AdjustDepth (component.gameObject, 1);
+		NGUITools.AdjustDepth (component.gameObject, nextDepth);
 	}
 
 	public void Pop () {

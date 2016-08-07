@@ -1,0 +1,60 @@
+{"frames": {
+
+"Coverlogo_1":
+{
+	"frame": {"x":686,"y":1254,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+},
+"Coverlogo_2":
+{
+	"frame": {"x":686,"y":628,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+},
+"Coverlogo_3":
+{
+	"frame": {"x":2,"y":1254,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+},
+"Coverlogo_4":
+{
+	"frame": {"x":2,"y":628,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+},
+"Coverlogo_5":
+{
+	"frame": {"x":686,"y":2,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+},
+"Coverlogo_6":
+{
+	"frame": {"x":2,"y":2,"w":682,"h":624},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":682,"h":624},
+	"sourceSize": {"w":682,"h":624}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "cover.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b3e268b984e6974acf4d247ff4ef643e$"
+}
+}

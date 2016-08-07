@@ -16,7 +16,7 @@ public class UICollectController : MonoBehaviour {
 		for (int index = 0; index < transform.childCount; index++) {
 			Transform child = transform.GetChild (index);
 			if (uiDic.ContainsKey (child.name)) {
-				Debug.LogError (string.Format ("Same Name!!! {0} {1}", gameObject.name,  child.name));
+//				Debug.LogError (string.Format ("Same Name!!! {0} {1}", gameObject.name,  child.name));
 				continue;
 			}
 			uiDic.Add (child.name, child);

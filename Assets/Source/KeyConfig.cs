@@ -3,16 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 public enum KeyType {
-	Empty,
+	TiD,
 	Do,
 	Re,
 	Mi,
 	Fa,
 	So,
 	La,
-	Ti,
+	Ti_0,
+	Ti_1,
 	DoU,
-	TiD,
 }
 
 public class KeyConfig {
